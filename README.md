@@ -40,9 +40,10 @@ O Garden Ease não é apenas tecnologia:
 É inovação a serviço da natureza.
 ![Captura de tela 2025-01-28 111843](https://github.com/user-attachments/assets/2a274817-f147-4ba0-813b-2240d6e2e374)
 
-Atuatalização semanal! 
+Atuatalização semanal! <br>
 Data: 28/01/2025 última, <br> 
 próximo 
-Agendado para 
+Agendado para <br> 
 Data: 04/02/2025 Pendente.
+<br>
 Valeu abraços!!
