@@ -94,6 +94,26 @@ board.on("ready", () => {
             stopWatering();
         }
     });
+
+    
+    //Integração com API externa
+    axios.get('https://api.exemplo.com/dados')
+    .then(response => {
+        console.log(response.data);
+        hideSpinner(); // Oculta o spinner após a resposta
+    })
+    .catch(error => {
+        console.error(error);
+        hideSpinner(); // Oculta o spinner em caso de erro
+    })
+    .finally(() => {
+        hideSpinner(); // Garante que o spinner será ocultado no final
+    });
+
+
+
+
+
     app.listen(port, () => {
         console.log(`Servidor rodando em http://localhost:${port}`);
     });

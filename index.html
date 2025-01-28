@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Dashbord Garden Ease</title>
 </head>
 
 <body>
+
+    <!-- Spinner -->
+    <div class="hourglassBackground">
+        <div class="hourglassContainer">
+            <!-- Spinner interno -->
+            <div class="hourglassCurves"></div>
+            <div class="hourglassCapTop"></div>
+            <div class="hourglassGlassTop"></div>
+            <div class="hourglassSand"></div>
+            <div class="hourglassSandStream"></div>
+            <div class="hourglassCapBottom"></div>
+            <div class="hourglassGlass"></div>
+        </div>
+    </div>
 
     <!--SIDEBAR -->
     <section id="sidebar">
@@ -123,7 +139,7 @@
                     <i class="bx bxs-calendar-check"></i>
                     <span class="text">
                         <div id="moisture-level" class="status">
-                            <span>Umidade do Solo: <span id="moisture-value">Carregando...</span></span>
+                            <p>Umidade do Solo: <span id="moisture-value">Carregando...</span></p>
                         </div>
                     </span>
                 </li>
@@ -131,36 +147,37 @@
                     <i class="bx bxs-group"></i>
                     <span class="text">
                         <div id="watering-status" class="status">
-                            <span>Status da Irrigação: <span id="watering-value">Desligado</span></span>
-                        </div>
+                            <p>Status da Irrigação: <span id="watering-value">Desligado</p>
+                    </span>
+                    </div>
                     </span>
                 </li>
                 <li>
                     <i class="bx bxs-dollar-circle"></i>
                     <span class="text">
-                        <h3>Litros 8655</h3>
-                        <p>TOtal de economia no consumo de água</p>
+                        <p>Litros 8655</>
+                        <p>Total de economia no consumo de água</p>
                     </span>
                 </li>
                 <li>
                     <span class="text">
                         <div class="container-temp">
-                            <!--
+
                             <input class="input-cidade" placeholder="Digite o nome da cidade">
                             <button onclick="cliqueiNoBotao()">
                                 <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg" alt="Buscar">
                             </button>
-                    -->
+
                             <div class="caixa-media">
                                 <h2 class="cidade">Tempo em Braília</h2>
-                                <p class="temp">28°C</p>
-                                <p class="text-previsao">Céu limpo</p> <!-- Descrição do clima -->
+                                <span class="temp">28°C</span>
                                 <div class="condicao-clima">
                                     <img class="icone" src="https://openweathermap.org/img/wn/04n.png"
                                         alt="Ícone do clima">
-                                    <p class="condicao">Céu Limpo</p> <!-- Exibição da condição detalhada -->
+                                    <p style="color: azure;" class="condicao">Céu Limpo</p>
+                                    <!-- Exibição da condição detalhada -->
                                 </div>
-                                <p class="umidade">Umidade: 70%</p>
+                                <p style="color: azure;" class="umidade">Umidade: 70%</p>
                             </div>
 
                         </div>
@@ -265,8 +282,24 @@
     </section>
     <!--Main end-->
 
-    <!--JavaScrip-->
-    <script src="script.js"></script>
+    <!-- spinner-->
+    
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    console.log('Página carregada');
+    const spinner = document.querySelector('.hourglassBackground');
+    const content = document.querySelector('.content');
+    
+    setTimeout(() => {
+        console.log('Aplicando classe hidden ao spinner...');
+        spinner.classList.add('hidden');
+        console.log('Exibindo conteúdo...');
+        content.style.display = 'block';
+    }, 4000);
+});
+
+    </script>
 </body>
 
 </html>

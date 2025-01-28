@@ -164,3 +164,5 @@ setInterval(() => {
             updateDashboard(data.moisture, data.isWatering);
         });
 }, 5000);
+
+
