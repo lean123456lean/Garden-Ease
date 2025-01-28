@@ -41,7 +41,7 @@ O Garden Ease não é apenas tecnologia:
 ![Captura de tela 2025-01-28 111843](https://github.com/user-attachments/assets/2a274817-f147-4ba0-813b-2240d6e2e374)
 
 Atutalizacões semanal! 
-Data: 28/01/2025 última
-Agendaddo para 
+Data: 28/01/2025 última, próximo 
+Agendado para 
 Data: 04/02/2025 Pendente.
 Valeu abraços!!
